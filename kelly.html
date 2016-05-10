@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Kelly Pool</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        body {
+            
+            font-family: arial, verdana, sans-serif;
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            
+        }
+        
+        .container {
+        width: 960px;
+        margin: 0 auto;
+        padding: 0;    
+/*        border: 1px solid red;    */
+           
+        }
+      input[type=text] {
+              width: 250px;
+            float: right;
+            margin-top: 30px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+
+	footer > p {
+		text-align: center;
+	}
+
+input[type=text]:focus {
+    width: 100%;
+}
+        
+        header {
+        background-image: url("img/background.jpg");
+        height: 180px;   
+        }
+        
+        #logo {
+            width: 960px;
+            display: block;
+            margin: 0 auto;
+          
+        }
+        #logo img {
+            max-width: 100%;
+            margin-top: 30px;
+        }
+        
+      
+        }
+        #main {
+            margin:auto;
+            width: 100%;
+        
+        }
+        
+        #image {
+            float:left;
+            padding: 50px;
+        }
+        
+        .text {
+            text-align: left;
+            padding-top: 25px;
+            width: 370px;
+            margin-left: 605px;
+            line-height: 1.4;
+
+        }
+        
+        
+        .map_icons img {
+    
+            width: 60px;
+            height: 60px;
+        }
+        footer  {
+            background-image: url("img/background.jpg");
+            height: 200px;
+            color: white;
+        }
+        
+        footer p {
+           padding-top: 50px;
+        }
+            
+    </style>
+    </head>
+    <body>
+
+        <header>
+            <input type="text" name="search" placeholder="Search..">
+            <div id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+        </header>
+        
+          
+        <div class="container">
+
+       
+        <div id="main">   
+            
+            <div id="image"><img src="img/kelly.jpg"></div>
+            
+             
+            <section class="text">
+                   <h2><b>Kelly</b></h2>
+                   <p>4231 Lansdowne Dr, Philadelphia, PA 19131</p>
+                    <p>Kelly Pool (or, as some locals like to say, the “West Philly Pool”, is generally regarded as the the nicest, most beautiful pool in the city. Kelly is in historical Fairmount park, right next to the Please Touch Museum. It is a gorgeous place to swim laps, but the hours can vary a bit from day to day. Check their 
+                    <a href="https://www.facebook.com/John-B-Kelly-Pool-158562017548105/">facebook</a>  page for any updates.</p>
+                    <p>Back to <a href="listings.html">listings</a></p>
+            </section>
+            
+            <section class="map_icons">
+                <a href="https://www.google.com/maps/dir//Kelly+Pool,+Lansdowne+Drive,+Philadelphia,+PA/@39.9791665,-75.2429499,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x89c6c70eb98fffff:0xd8558305f260bc1f!2m2!1d-75.2079306!2d39.979106!3e0"><img src="img/car.svg"></a>
+                <a href="https://www.google.com/maps/dir//Kelly+Pool,+Lansdowne+Drive,+Philadelphia,+PA/@39.9791665,-75.2429499,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x89c6c70eb98fffff:0xd8558305f260bc1f!2m2!1d-75.2079306!2d39.979106!3e3"><img src="img/bus.svg"></a>
+                <a href="https://www.google.com/maps/dir//Kelly+Pool,+Lansdowne+Drive,+Philadelphia,+PA/@39.9791665,-75.2429499,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x89c6c70eb98fffff:0xd8558305f260bc1f!2m2!1d-75.2079306!2d39.979106!3e1"><img src="img/bike.svg"></a>
+        
+            </section>
+             
+            </div>
+          
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'http://swimadelphia.disqus.com/embed.js';  
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div><!-- /.container -->
+        <footer>
+		<p>questions? contact us at info@swimadelphia.com</p>
+	</footer>
+        
+           
+ 
+    </body>
+    
+</html>
+    

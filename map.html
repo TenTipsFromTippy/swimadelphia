@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 50%;
+	width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        var kelly = {lat: 39.97910599999999, lng: -75.2079306};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: kelly
+  });
+
+ var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading"><a href="kelly.html">Kelly Pool</a></h1>'+
+      '<div id="bodyContent">'+
+      '<p>4231 Lansdowne Dr, Philadelphia, PA 19131 </p>'+
+      '<p>A beautiful pool nestled in Fairmount Park, surrounded by grass, '+
+      'trees, and lovely visitors.</p>' +
+      '<a href="https://www.facebook.com/John-B-Kelly-Pool-158562017548105/"><p>Facebook</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: kelly,
+    map: map,
+    title: 'Kelly'
+  });
+  
+          
+    marker.addListener('click', function() {
+       infowindow.open(map, marker); 
+    });
+          
+}
+      
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT3gj3X3GuRlBRVwWz8RwHGegYPqjytbg&callback=initMap"
+    async defer></script>
+  </body>
+</html>
